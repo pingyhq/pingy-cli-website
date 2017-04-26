@@ -1,0 +1,226 @@
+.hero-header {
+  // background-image: linear-gradient(-125deg, #FFC400 0%, #FFEE00 87%);
+  background: #FFEE00;
+  // height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+// .bg-design-1 {
+//   width: 120vw;
+//   height: 50vh;
+//   position: absolute;
+//   background: white;
+//   transform: rotate(-17deg);
+//   right: -45vw;
+//   top: -35vh;
+//   opacity: 1;
+//   background-image: linear-gradient(-170deg, #FB984C 0%, #FEC400 47%);
+// }
+
+.container {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+@keyframes spotlight {
+  from { opacity: 0; }
+  to { opacity: 0.7; }
+}
+
+.bg-design-1 {
+  width: 140vw;
+  height: 50vh;
+  position: absolute;
+  background: white;
+  transform: rotate(17deg);
+  left: -15vw;
+  top: 30vh;
+  background-image: linear-gradient(2deg, #FEB825 0%, #FFDF00 71%);
+  opacity: 0.7;
+
+  // animation-duration: 1s;
+  // animation-name: spotlight;
+  // animation-fill-mode: forwards;
+}
+
+.bg-design-2 {
+  width: 140vw;
+  height: 50vh;
+  position: absolute;
+  background: white;
+  transform: rotate(-17deg);
+  right: -15vw;
+  top: 30vh;
+  background-image: linear-gradient(2deg, #FEB825 0%, #FFDF00 71%);
+  opacity: 0.7;
+
+  // animation-duration: 1s;
+  // animation-name: spotlight;
+  // animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+}
+
+// .bg-border {
+//   width: calc(100vw - 16px);
+//   height: calc(100vh - 16px);
+//   position: absolute;
+//   border: 8px #fff solid;
+// }
+
+@keyframes logo-scroll-up {
+  from { top: 40vh; }
+  to { top: 10vh; }
+}
+
+.logo {
+  // position: absolute;
+  // z-index: 1;
+  display: block;
+  margin: 20px auto;
+  // top: 5vh;
+  width: 200px;
+  max-width: 80%;
+  // height: 22.5vh;
+  // width: 100%;
+  // animation-duration: 1s;
+  // animation-name: logo-scroll-up;
+  // animation-fill-mode: forwards;
+  // animation-delay: 0.5s;
+}
+
+@keyframes fin {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cursor {
+  from { transform: translateX(-300px); }
+  to { transform: translateX(-10px); }
+}
+
+#logo-cursor {
+  transform: translateX(-300px);
+}
+
+.loaded #logo-cursor {
+  animation-duration: 0.8s;
+  animation-name: cursor;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(8, end);
+}
+
+#logo-p, #logo-i, #logo-n, #logo-g, #logo-y, #logo-slash, #logo-c, #logo-l, #logo-i2 {
+  opacity: 0;
+}
+
+.loaded {
+  #logo-p, #logo-i, #logo-n, #logo-g, #logo-y, #logo-slash, #logo-c, #logo-l, #logo-i2 {
+    opacity: 0;
+    animation-duration: 0.1s;
+    animation-name: fin;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+  }
+}
+
+#logo-i {
+  animation-delay: 0.1s;
+}
+#logo-n {
+  animation-delay: 0.2s;
+}
+#logo-g {
+  animation-delay: 0.3s;
+}
+#logo-y {
+  animation-delay: 0.4s;
+}
+#logo-slash {
+  animation-delay: 0.5s;
+}
+#logo-c {
+  animation-delay: 0.6s;
+}
+#logo-l {
+  animation-delay: 0.7s;
+}
+#logo-i2 {
+  animation-delay: 0.8s;
+}
+
+h2 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: normal;
+  color: #111;
+  text-shadow: 1px 1px 8px #fff, -1px -1px 8px #fff;
+  line-height: 1.6;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+h1 {
+  opacity: 1;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: normal;
+  color: #111;
+  text-shadow: 1px 1px 8px #fff, -1px -1px 8px #fff;
+  line-height: 1.6;
+  font-size: 40px;
+
+  // animation-duration: 0.7s;
+  // animation-name: fin;
+  // animation-fill-mode: forwards;
+  // animation-delay: 0.9s;
+
+  span {
+    // display: inline-block;
+    max-width: 800px;
+
+    border-bottom: 5px #fff solid;
+  }
+}
+
+.install-code {
+  opacity: 1;
+  // position: absolute;
+  z-index: 1;
+  // top: 70vh;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.install-code > div {
+
+  // width: 50%;
+  // left: 25%;
+  display: inline-block;
+  text-align: left;
+  // width: 22rem;
+  margin: 0 auto;
+  border: 2px #fff solid;
+  background: rgba(255,255,255,0.7);
+  padding: 1rem;
+  font-family: "Operator Mono";
+  font-weight: bold;
+  font-size: 3vh;
+  font-size: calc(1.5vh + 1.5vw);
+
+
+  // animation-duration: 0.7s;
+  // animation-name: fin;
+  // animation-fill-mode: forwards;
+  // animation-delay: 0.9s;
+  code {
+    display: block;
+    padding: 0.1rem;
+  }
+}

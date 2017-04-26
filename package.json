@@ -1,0 +1,1 @@
+{"name":"cli-site","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"pingy serve","export":"pingy export"},"author":"Dave Jeffery <dave@davejeffery.com>","license":"ISC","devDependencies":{"dogescript":"^2.3.0","node-sass":"^4.5.2"}}
