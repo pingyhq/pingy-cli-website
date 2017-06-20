@@ -1,0 +1,22 @@
+{
+  "name": "cli-site",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dave Jeffery <dave@davejeffery.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "^2.0.0",
+    "clipboard": "^1.6.1"
+  }
+}

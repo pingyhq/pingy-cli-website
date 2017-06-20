@@ -1,0 +1,109 @@
+.pingy-call-to-action {
+  background: linear-gradient(150deg,#ecf9f9 15%,#f4ebbe 70%,#f4dcdc 94%);
+
+  .placeholder {
+    cursor: pointer;
+    position: relative;
+    min-height: 329px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      overflow: hidden;
+    }
+  }
+  .check-out {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    top: -40px;
+    right: 400px;
+    @media screen and (max-width: $large-breakpoint) {
+      right: 300px;
+    }
+    @media screen and (max-width: $medium-breakpoint) {
+      right: 240px;
+    }
+    @media screen and (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+
+  .pingy-logo {
+    @media screen and (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+
+  .text {
+    max-width: 700px;
+    margin-top: 20px;
+    margin-right: 420px;
+    float: left;
+    margin-left: 40px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-top: 270px;
+      margin-right: 40px;
+    }
+
+    h4 {
+      font-family: $heading-fonts;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1.4;
+      margin-top: 20px;
+      span {
+        font-weight: bold;
+      }
+      a {
+        font-weight: bold;
+        color: #111;
+      }
+    }
+    p {
+      font-size: 19px;
+      line-height: 1.4;
+      @media screen and (max-width: $large-breakpoint) {
+        display: none;
+      }
+    }
+  }
+}
+
+.videos {
+  transition: transform 600ms;
+  display: none;
+  position: absolute;
+  right: 26px;
+  top: -24px;
+  background-image: url('https://pin.gy/images/videos/video-bg.png');
+  height: 349px;
+  width: 412px;
+  background-size: 412px 349px;
+  z-index: 2;
+
+  @media screen and (max-width: $large-breakpoint) {
+    right: 0;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    right: -25px;
+  }
+
+  @media screen and (max-width: $small-mobile-breakpoint) {
+    right: -51px;
+  }
+
+  .inner {
+    width: 300px;
+    height: 224px;
+    overflow: hidden;
+    position: relative;
+    top: 45px;
+    left: 56px;
+  }
+  video {
+    display: none;
+    width: 300px;
+  }
+}

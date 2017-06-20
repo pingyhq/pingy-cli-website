@@ -1,0 +1,120 @@
+.terminal {
+  background: #222;
+  position: relative;
+  width: 90%;
+  // margin-left: 5%;
+  border-radius: 4px;
+  color: #fff;
+  // margin-left: 20px;
+  margin-bottom: 60px;
+  // box-shadow: 0px 10px 60px rgba(0,0,0,.2);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,.55);
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+
+  .title {
+    @media screen and (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+
+  .toolbar {
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-shadow: none;
+    font-size: 12px;
+    height: 34px;
+    line-height: 34px;
+    text-rendering: geometricPrecision;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    .close, .minimize, .zoom {
+      top: 10px;
+    }
+  }
+  .inner {
+    height: 300px;
+    font-family: $mono-fonts;
+    text-align: left;
+    padding: 12px 14px;
+    overflow: hidden;
+
+    .cursor {
+      margin-left: -7px;
+      width: 10px;
+      height: 21px;
+      display: inline-block;
+      background-color: rgb(248, 28, 229);
+      border-color: rgb(248, 28, 229);
+      vertical-align: middle;
+    }
+
+    .terminal-text {
+      margin-left: 5px;
+    }
+
+    #fakeLink {
+      cursor:pointer;
+      color:#ff2e88;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toolbar {
+  height: 24px;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(#EBEBEB, #D5D5D5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: 1px #F4F4F4 solid;
+  border-bottom: 1px #B4B4B4 solid;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-size: 13px;
+  color: #404040;
+  line-height: 20px;
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.50);
+  text-align: center;
+  position: relative;
+
+
+  .sub-title {
+    color: #888;
+  }
+
+  .close, .minimize, .zoom {
+
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #FF3B47;
+    text-indent: -9999px;
+    border: 1px #F21A2E solid;
+  }
+
+  .close {
+    left: 10px;
+    background: radial-gradient(#FF3B47,  #FF4A53);
+    border-color: #E81328;
+  }
+
+  .minimize {
+    left: 30px;
+    background: radial-gradient(#FFBD00, #FFC400);
+    border-color: #E69E12;
+  }
+
+  .zoom {
+    left: 50px;
+    background: radial-gradient(#00D640, #00DA43);
+    border-color: #12B728;
+  }
+}

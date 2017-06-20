@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Pingy CLI: The Simple Frontend Build Tool</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Language" content="en">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -17,22 +17,382 @@
       <div class="bg-design-2"></div>
       <div class="bg-border"></div>
         <div class="container">
-        <svg class="logo" viewBox="0 0 532 255" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>logo</title><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="v"><feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="x"><stop stop-color="#F3F3F3" offset="0%"/><stop stop-color="#E1E1E1" offset="2.5%"/><stop stop-color="#FAFAFA" offset="11.8%"/><stop stop-color="#CCC" offset="73.1%"/></linearGradient><rect id="a" width="512" height="59" rx="5"/><mask id="w" x="0" y="0" width="512" height="59" fill="#fff"><use xlink:href="#a"/></mask><path id="y" d="M0 59h512v177H0z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="z"><feMorphology radius="2" in="SourceAlpha" result="shadowSpreadInner1"/><feGaussianBlur stdDeviation="1" in="shadowSpreadInner1" result="shadowBlurInner1"/><feOffset dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" in="shadowInnerInner1" result="shadowMatrixInner1"/><feMorphology radius="2" in="SourceAlpha" result="shadowSpreadInner2"/><feGaussianBlur stdDeviation="1" in="shadowSpreadInner2" result="shadowBlurInner2"/><feOffset dy="-3" in="shadowBlurInner2" result="shadowOffsetInner2"/><feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" in="shadowInnerInner2" result="shadowMatrixInner2"/><feMerge><feMergeNode in="shadowMatrixInner1"/><feMergeNode in="shadowMatrixInner2"/></feMerge></filter><path id="b" d="M0 0h106v27.2H0z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="A"><feMorphology radius="3" in="SourceAlpha" result="shadowSpreadInner1"/><feOffset in="shadowSpreadInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" in="shadowInnerInner1"/></filter><mask id="B" x="0" y="0" width="106" height="27.2" fill="#fff"><use xlink:href="#b"/></mask><path id="c" d="M105 0h106v27.2H105z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="C"><feMorphology radius="3" in="SourceAlpha" result="shadowSpreadInner1"/><feOffset in="shadowSpreadInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" in="shadowInnerInner1"/></filter><mask id="D" x="0" y="0" width="106" height="27.2" fill="#fff"><use xlink:href="#c"/></mask><path id="d" d="M210 0h106v27.2H210z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="E"><feMorphology radius="3" in="SourceAlpha" result="shadowSpreadInner1"/><feOffset in="shadowSpreadInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" in="shadowInnerInner1"/></filter><mask id="F" x="0" y="0" width="106" height="27.2" fill="#fff"><use xlink:href="#d"/></mask><path id="e" d="M315 0h197v27.2H315z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="G"><feMorphology radius="3" in="SourceAlpha" result="shadowSpreadInner1"/><feOffset in="shadowSpreadInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" in="shadowInnerInner1"/></filter><mask id="H" x="0" y="0" width="197" height="27.2" fill="#fff"><use xlink:href="#e"/></mask><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="K"><stop stop-color="#FFF700" offset="0%"/><stop stop-color="#FB0" offset="100%"/></linearGradient><radialGradient fx="50%" fy="50%" r="46.1%" id="I"><stop stop-color="#FFF" stop-opacity=".4" offset="0%"/><stop stop-color="#FFF" stop-opacity=".1" offset="100%"/></radialGradient><path d="M56.2 50.2L31.7 1c-.3-.7-.8-1-1.3-1-.8 0-1.5.6-1.5 1.5v.3L33 35v.8c0 2.4-1.8 4.3-4.2 4.3H6c-3.4.4-6 3.2-6 6.6 0 1 .2 2 .6 3L25.2 99l.2.4c.3.4.7.7 1.2.7.8 0 1.5-.6 1.5-1.4l-4-33.4c0-.3 0-.5-.2-.7 0-2.6 2-4.6 4.4-4.6H51c3.4-.4 6-3.2 6-6.6 0-1-.2-1.7-.5-2.5l-.3-.8z" id="f"/><mask id="J" x="0" y="0" width="57" height="100.1" fill="#fff"><use xlink:href="#f"/></mask><path d="M9.6 60.2L.4 61V49.8c0-18.2 0-27-.4-33.2l8.5-.5.4 3.3c2-2.2 5-4 8.4-4 6.8 0 11.8 6.2 11.8 15.7 0 12.4-8.6 19.4-19.6 19.4v9.8zm3-17.8c4.3 0 7.4-2.8 7.4-9 0-7-2.7-10.5-6.4-10.5-1.4 0-3 .4-4.2 1.4l.2 17.4c1 .4 2 .6 3 .6z" id="g"/><mask id="L" x="0" y="0" width="29.2" height="45.6" fill="#fff"><use xlink:href="#g"/></mask><path id="h" d="M31 47.4l1-7H21v-26H1.6L1 20.8l10.8.4v19H1.2v7z"/><mask id="M" x="0" y="0" width="31" height="33.1" fill="#fff"><use xlink:href="#h"/></mask><path id="i" d="M21 9.7l.7-9.5H12l-.6 9.5z"/><mask id="N" x="0" y="0" width="10.3" height="9.5" fill="#fff"><use xlink:href="#i"/></mask><path d="M15.4 8.3c2.7 0 4.4 1.5 4.4 6.8v19.4H29V11.8c0-8-3.4-11.4-9-11.4-4.5 0-7.7 2-10.2 4.4L9.4 1l-8.7.6c.5 7.4.6 17.5.6 32.8h9.3c0-9.8 0-18.2-.3-24.5 1.5-1 3.2-1.7 5-1.7z" id="j"/><mask id="O" x="0" y="0" width="28.4" height="34.1" fill="#fff"><use xlink:href="#j"/></mask><path d="M5.8 46l-1-8.2c13.8-1.2 15.4-1.7 15.6-9-2 1.3-4.5 2.3-7.6 2.3-6.7 0-12-5-12-13.4C1 7.3 9 .6 19.3.6c3.4 0 7 .4 10.3 1.5l.2 22.2c0 12.7-4.5 21-24 22zm10.7-22c1.3 0 2.6-.2 4-.7V9c-1.7-.5-3.2-.8-4.8-.8-3.6 0-5.7 2.4-5.7 7.3 0 5.8 3 8.5 6.5 8.5z" id="k"/><mask id="P" x="0" y="0" width="28.8" height="45.6" fill="#fff"><use xlink:href="#k"/></mask><path d="M3.7 46c12.7-.8 16.5-4 21.6-19 3-8.8 6-18.8 8-25.7h-9l-6 22.4h-.6C15.3 17.5 12.2 7 10 1l-9.5.6c1.8 5 9.3 25 11.5 30.5l2 1c-1.6 3.4-4 3.8-11 4.7l.7 8.3z" id="l"/><mask id="Q" x="0" y="0" width="32.8" height="45.1" fill="#fff"><use xlink:href="#l"/></mask><path id="m" d="M30 0L.7 59.5l8 3.8L38 3.8z"/><mask id="R" x="0" y="0" width="37.5" height="63.3" fill="#fff"><use xlink:href="#m"/></mask><path d="M.2 18.5c0 10.3 5.4 18.3 26.6 16.2l1-7.7C14 28 9.4 25.5 9.4 17.2c0-5.7 1.6-8.6 17.7-7.6L26.6.8C6.3.6.2 9 .2 18.5z" id="n"/><mask id="S" x="0" y="0" width="27.4" height="34.2" fill="#fff"><use xlink:href="#n"/></mask><path id="o" d="M28 46.4l.8-7H19V.5H1L0 7.3l9.7.5v31.8H0v7z"/><mask id="T" x="0" y="0" width="28.8" height="45.9" fill="#fff"><use xlink:href="#o"/></mask><path id="p" d="M30.2 47.4l.8-7H20.3v-26H.7L0 20.8l11 .4v19H.3v7z"/><mask id="U" x="0" y="0" width="31" height="33.1" fill="#fff"><use xlink:href="#p"/></mask><path id="q" d="M20.3 9.7l.5-9.5H11l-.5 9.5z"/><mask id="V" x="0" y="0" width="10.3" height="9.5" fill="#fff"><use xlink:href="#q"/></mask><path id="r" d="M423 8h37v72h-37z"/><mask id="W" x="0" y="0" width="37" height="72" fill="#fff"><use xlink:href="#r"/></mask><ellipse id="s" cx="25" cy="5" rx="5" ry="5"/><mask id="X" x="-2" y="-2" width="14" height="14"><path fill="#fff" d="M18-2h14v14H18z"/><use xlink:href="#s"/></mask><ellipse id="t" cx="5" cy="5" rx="5" ry="5"/><mask id="Y" x="-2" y="-2" width="14" height="14"><path fill="#fff" d="M-2-2h14v14H-2z"/><use xlink:href="#t"/></mask><ellipse id="u" cx="45" cy="5" rx="5" ry="5"/><mask id="Z" x="-2" y="-2" width="14" height="14"><path fill="#fff" d="M38-2h14v14H38z"/><use xlink:href="#u"/></mask></defs><g fill="none" fill-rule="evenodd"><g filter="url(#v)" transform="translate(10 6)"><use stroke-opacity=".2" stroke="#000" mask="url(#w)" stroke-width="2" fill="url(#x)" xlink:href="#a"/><use fill-opacity=".5" fill="#000" xlink:href="#y"/><use fill="#000" filter="url(#z)" xlink:href="#y"/><use stroke="#000" xlink:href="#y"/><g><g transform="translate(0 32)"><use fill="#000" filter="url(#A)" xlink:href="#b"/><use stroke-opacity=".2" stroke="#000" mask="url(#B)" stroke-width="2" xlink:href="#b"/></g><g opacity=".7" transform="translate(0 32)"><use fill-opacity=".3" fill="#000" xlink:href="#c"/><use fill="#000" filter="url(#C)" xlink:href="#c"/><use stroke-opacity=".2" stroke="#000" mask="url(#D)" stroke-width="2" xlink:href="#c"/></g><g opacity=".7" transform="translate(0 32)"><use fill-opacity=".3" fill="#000" xlink:href="#d"/><use fill="#000" filter="url(#E)" xlink:href="#d"/><use stroke-opacity=".2" stroke="#000" mask="url(#F)" stroke-width="2" xlink:href="#d"/></g><g opacity=".7" transform="translate(0 32)"><use fill-opacity=".3" fill="#000" xlink:href="#e"/><use fill="#000" filter="url(#G)" xlink:href="#e"/><use stroke-opacity=".2" stroke="#000" mask="url(#H)" stroke-width="2" xlink:href="#e"/></g><g fill="#111"><path d="M34.2 44.2V43h-2.4v1.2h2.4zM30.6 49v-7.2h4.8v3.6h-3.6V49h-1.2zm6 0v-7.2h1.2V49h-1.2zm2.4 0v-7.2h1.2V43h1.2v1.2h-1.2V49H39zm3.6 0v-3.6h-1.2v-1.2h1.2v-2.4h1.2V49h-1.2zm3.6 0v-1.2h2.4V49h-2.4zm2.4-1.2v-2.4h-1.2v-1.2h2.4v3.6h-1.2zm-3.6 0V43h1.2v4.8H45zm1.2-4.8v-1.2h3.6V43h-3.6zm7.2 6v-3.6h1.2V49h-1.2zm-1.2-3.6v-1.2h1.2v1.2h-1.2zm2.4 0v-1.2h1.2v1.2h-1.2zM51 44.2v-2.4h1.2v2.4H51zm4.8 0v-2.4H57v2.4h-1.2zm2.4 1.2v-1.2h3.6v1.2h-3.6zm6 3.6v-1.2h2.4V49h-2.4zm2.4-1.2v-1.2h1.2v1.2h-1.2zm-3.6 0V43h1.2v4.8H63zm3.6-3.6V43h1.2v1.2h-1.2zM64.2 43v-1.2h2.4V43h-2.4zm4.8 6v-7.2h1.2v6h3.6V49H69zm6 0v-7.2h1.2V49H75z" fill-opacity=".5"/><path d="M148.2 49v-1.2h2.4V49h-2.4zm2.4-1.2v-2.4h-1.2v-1.2h2.4v3.6h-1.2zm-3.6 0V43h1.2v4.8H147zm1.2-4.8v-1.2h3.6V43h-3.6zm6 6v-1.2h2.4V49h-2.4zm-1.2-1.2v-6h1.2v6H153zm3.6 0v-6h1.2v6h-1.2zM159 49v-7.2h1.2v6h3.6V49H159zm9.6-4.8V43h-2.4v1.2h2.4zM165 49v-7.2h4.8v3.6h-3.6V49H165zM249.6 49v-1.2h2.4V49h-2.4zm2.4-1.2v-2.4h-1.2v-1.2h2.4v3.6H252zm-3.6 0V43h1.2v4.8h-1.2zm1.2-4.8v-1.2h3.6V43h-3.6zm8.4 6v-3.6h1.2V49H258zm0-4.8V43h1.2v1.2H258zm-3.6 4.8v-7.2h3.6V43h-2.4v1.2h2.4v1.2h-2.4V49h-1.2zm7.2 0v-1.2h2.4V49h-2.4zm-1.2-1.2v-6h1.2v6h-1.2zm3.6 0v-6h1.2v6H264zm2.4 1.2v-7.2h1.2V43h1.2v1.2h-1.2V49h-1.2zm3.6 0v-3.6h-1.2v-1.2h1.2v-2.4h1.2V49H270zm4.8 0v-6h-2.4v-1.2h6V43H276v6h-1.2z" fill-opacity=".3"/></g></g></g><g transform="translate(29 106)"><use stroke="url(#I)" mask="url(#J)" stroke-width="3.8" fill="url(#K)" transform="matrix(-1 0 0 1 57 0)" xlink:href="#f"/><g transform="translate(93 16)" id="logo-p"><use stroke="url(#I)" mask="url(#L)" stroke-width="3.8" fill="#FFF" xlink:href="#g"/></g><g id="logo-i" transform="translate(128 18)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"><use mask="url(#M)" xlink:href="#h"/><use mask="url(#N)" xlink:href="#i"/></g><use mask="url(#O)" id="logo-n" xlink:href="#j" transform="translate(164 31)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><use id="logo-g" mask="url(#P)" xlink:href="#k" transform="translate(199 31)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><use id="logo-y" mask="url(#Q)" xlink:href="#l" transform="translate(234 31)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><use id="logo-slash" mask="url(#R)" xlink:href="#m" transform="translate(268 16)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><use id="logo-c" mask="url(#S)" xlink:href="#n" transform="translate(309 31)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><use id="logo-l" mask="url(#T)" xlink:href="#o" transform="translate(345 19)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"/><g id="logo-i2" transform="translate(381 18)" stroke="url(#I)" stroke-width="3.8" fill="#FFF"><use mask="url(#U)" xlink:href="#p"/><use mask="url(#V)" xlink:href="#q"/></g><use id="logo-cursor" stroke="url(#I)" mask="url(#W)" stroke-width="3.8" fill="#FFF" opacity=".5" xlink:href="#r"/></g><g transform="translate(20 18)"><use fill-opacity=".3" fill="#9E9E9E" xlink:href="#s"/><use stroke-opacity=".6" stroke="#878787" mask="url(#X)" stroke-width="4" xlink:href="#s"/></g><g transform="translate(20 18)"><use fill-opacity=".3" fill="#9E9E9E" xlink:href="#t"/><use stroke-opacity=".6" stroke="#878787" mask="url(#Y)" stroke-width="4" xlink:href="#t"/></g><g transform="translate(20 18)"><use fill-opacity=".3" fill="#9E9E9E" xlink:href="#u"/><use stroke-opacity=".6" stroke="#878787" mask="url(#Z)" stroke-width="4" xlink:href="#u"/></g></g></svg>
+          <div class="logo">
+            <img src="images/logo1.svg">
+          </div>
+          <h2 class="tagline">No Config &bull; No Plugins</h2>
+          <div class="headline">
+            <h1 class="hero-text">
+              <span><div>The</div><span></span></span><br>
+              <strong>
+                <span><div>Simple</div><span></span></span><br>
+                <span><div>Frontend</div><span></span></span><br>
+              </strong>
+              <span><div>Build Tool</div><span></span></span>
+            </h1>
+          </div>
 
-        <h2 class="tagline">No Configuration &bull; No Plugins</h2>
+          <div class="explainer">
+            <terminal></terminal>
+            <web-browser></web-browser>
+            <code-editor></code-editor>
+            <div class="finished-demo-text">
+              Pingy CLI does all LESS/SASS/Babel/etc.. compilations in-memory, so it's <b>super</b> fast.
+              We also include Source Maps so it's easier to debug your code.<br><br>
 
-        <h1><span>The <strong>Simple</strong> Frontend Build Tool</span></h1>
-
-        <div class="install-code">
-          <div>
-            <code>npm i -g @pingy/cli</code>
+              When it comes time to push your site to production then Pingy CLI has your back too.
+              Pingy will compile all your assets, minify them and output them to disk so you can upload them wherever
+              you like.
+            </div>
           </div>
         </div>
-      </div>
+
     </header>
-    <script src="scripts/main.js"></script>
+
+    <div class="install-code">
+      <code id="npmInstallPingy" title="Use this command to install Pingy CLI using NodeJS">npm install -g @pingy/cli</code>
+      <small>(Requires Node.js 6+)</small>
+      <button class="click-to-copy" data-clipboard-target="#npmInstallPingy">
+        Click to Copy
+        <span class="success">Copied!</span>
+      </button>
+    </div>
+
+    <article class="synopsis">
+      <p>
+        Gulp and Grunt and other heavyweight build tools are great for <em>complicated</em> build workflows.
+        Sometimes you want something <em>simpler</em> that doesn't take lots of configuration to get up and running.<br>
+        <strong>That's Pingy CLI.</strong><br>
+        <a style="display:none" class="github-button" href="https://github.com/pingyhq/pingy-cli" data-icon="octicon-star" data-show-count="true" aria-label="Star pingyhq/pingy-cli on GitHub">Star</a>&nbsp;
+        <a href="https://travis-ci.org/pingyhq/pingy-cli"><img src="https://travis-ci.org/pingyhq/pingy-cli.svg?branch=master" alt="Build Status"></a>&nbsp;
+        <img src="https://img.shields.io/npm/v/@pingy/cli.svg" alt="npm">
+      </p>
+    </article>
+
+    <div class="feature">
+      <article>
+        <h3>1. Initialise</h3>
+        <div class="run-code">
+          <code id="pingyInit">pingy init</code>
+          <button class="click-to-copy" data-clipboard-target="#pingyInit">
+            Click to Copy
+            <span class="success">Copied!</span>
+          </button>
+        </div>
+        <p>
+          An <strong>interactive prompt</strong> will ask you a few questions and can then install
+          requested dependencies (e.g. Sass, Less, Babel, CoffeeScript etc..).
+          Optionally, init can also <strong>scaffold</strong> some boilerplate files for your website.
+        </p>
+        <p>
+          Pingy is <strong>zero-configuration</strong> but it does place a .pingy.json file in your
+          website folder to help Pingy identify the root of your website.
+          Currently, this only contains the default folder name for exporting you site
+          ('dist'), you can change this if you like.
+        </p>
+        <p>
+          <em>Coming soon: A non-interactive version of the init command.</em>
+          In the mean-time, it's worth noting that you can actually initialise a
+          Pingy project by simply running the command <code>touch .pingy.json</code>.
+        </p>
+      </article>
+      <aside>
+        <div class="">
+          <h4>Watch an example of <code>pingy init</code></h4>
+          <script type="text/javascript" src="https://asciinema.org/a/ek7luzrvy3lb5kgirw6jlyryi.js" id="asciicast-ek7luzrvy3lb5kgirw6jlyryi" async></script>
+        </div>
+      </aside>
+    </div>
+
+    <div class="feature">
+      <article>
+        <h3>2. Develop</h3>
+        <div class="run-code">
+          <code id="pingyDev">pingy dev</code>
+          <button class="click-to-copy" data-clipboard-target="#pingyDev">
+            Click to Copy
+            <span class="success">Copied!</span>
+          </button>
+        </div>
+        <p>
+          Start-up a local development server. Automatically supports <strong>live
+          browser reload</strong> and <strong>compilation/transpilation</strong> (with in-memory smart caching).
+        </p>
+        <p>
+          All of this <strong>without any configuration</strong>! Debugging is a joy too because
+          we show you syntax errors in-browser (instead of hidden away in the terminal),
+          we also support <strong>SourceMaps</strong> out-of-the-box.
+        </p>
+
+        <h4>2.5 Compilation</h4>
+        <p>
+          Pingy CLI works with Sass, Less, Stylus, Jade, Pug, Markdown, EJS, Bublé, LiveScript, Babel &amp; Coffeescript
+          with more coming soon.
+        </p>
+        <p>
+          Pingy CLI will watch incoming HTTP requests, <storng>compile lazily</storng> in-memory and <strong>cache</strong> the compilation output.
+        </p>
+      </article>
+      <aside>
+        <h4>How Compilation works</h4>
+
+        <p>
+          <label style="font-weight:bold;">Which plugin do you want to use?</label>&nbsp;
+          <select id="pluginChanger"></select>&nbsp;
+          <img src="images/change-me.svg" class="change-me">
+        </p>
+
+        <p>
+          <strong>1.</strong> Create your <a data-language="name" href="http://sass-lang.com/" data-language="url" target="_blank">Sass</a> file just as you would normally and save it with the
+          <strong>file extension of <code>.<span data-language="extension">scss</span></code></strong>.
+          Your <a href="http://sass-lang.com/" data-language="name" target="_blank">Sass</a> file might look like this:
+        </p>
+
+        <plugin-code-editor subtitle="~/Sites/My-Site"></plugin-code-editor>
+
+        <p style="margin-top: 30px;">
+          <strong>2.</strong> Reference the file with it's <strong>compiled</strong> file extension. So in the case of
+          <a data-language="name" href="http://sass-lang.com/" target="_blank">Sass</a> that would be <code>
+          <strong>.<span data-language="compiledExtension">css</span></strong></code> (even though that file doesn't exist on disk).
+        </p>
+
+        <plugin-ref-code-editor subtitle="~/Sites/My-Site" title="index.html"></plugin-ref-code-editor>
+
+        <p>
+          Done! You've got <strong>SourceMaps</strong>, <strong>smart caching</strong>, <strong>Live Reload</strong> and <strong>in-browser syntax errors</strong>.
+          It's that easy!
+        </p>
+
+
+
+
+        <!-- <code-editor-refs></code-editor-refs>
+        <p style="text-align: center;">
+          <button type="button" class="button" id="showMeCompilation">⬆ Show Me</button>
+        </p>
+        <p>
+          Simply <em>save</em> your file with the correct corresponding extension,
+          for example: <code>main.<b>less</b></code> for LESS files or
+          <code>app.<b>coffee</b></code> for CoffeeScript files.
+        </p>
+
+        <p>
+          Then reference the file in it's destination format, for example:
+          <code>main.<b>css</b></code> or <code>app.<b>js</b></code>.
+        </p>
+
+        <p>
+          Even though <code>main.css</code> and <code>app.js</code> don't exist (<code>404</code>),
+          Pingy CLI will watch incoming HTTP requests and compile the files lazily in-memory.
+        </p> -->
+      </aside>
+    </div>
+
+    <div class="feature">
+      <article>
+        <h3>3. Export</h3>
+        <div class="run-code">
+          <code id="pingyExport">pingy export</code>
+          <button class="click-to-copy" data-clipboard-target="#pingyExport">
+            Click to Copy
+            <span class="success">Copied!</span>
+          </button>
+        </div>
+        <p>
+          <strong>Minify</strong> all your assets and <strong>compile</strong> all your source files with one simple command.
+          Pingy CLI will make sure your site is <strong>optimised</strong> and ready-for-production.
+        </p>
+        <p>
+          One of the really nice things about Pingy CLI is that it <em>doesn't</em> re-compile
+          your project from scratch each time you do an export.
+          Pingy CLI is smart and <strong>only re-compiles the files that have changed since your last export</strong>.
+        </p>
+      </article>
+      <aside>
+        <div class="">
+          <div class="">
+            <h4>Watch an example of <code>pingy export</code></h4>
+            <script type="text/javascript" src="https://asciinema.org/a/8krd3lbyzxkt11rbeiy50ya82.js" id="asciicast-8krd3lbyzxkt11rbeiy50ya82" async></script>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+
+
+    <div style="background: #e6f4ff; padding: 20px 0; border-top: 3px #b3deff solid">
+      <div class="feature">
+        <div class="feature-list">
+          <h3>Features</h3>
+
+          <table class="compare-minimal">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Pingy CLI</th>
+                <th>Gulp/Grunt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Initialise project helper</span>
+                    <div class="tooltip">An interactive prompt can help you install dependencies and scaffold out boilerplate files.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td><img src="images/feature-no.svg"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Compile/transpile</span>
+                    <div class="tooltip">Pingy CLI works with Sass, Less, Stylus, Jade, Pug, Markdown, EJS, Bublé, LiveScript, Babel &amp; Coffeescript with more coming soon.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td>Requires plugin(s) + config</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Zero-configuration</span>
+                    <div class="tooltip">No time spent configuring your project, just follow Pingy CLI's simple conventions.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td><img src="images/feature-no.svg"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Live Reload</span>
+                    <div class="tooltip">Reloads the browser/styles when it detects a file change.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td>Requires plugin + config</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Smart efficient file watching</span>
+                    <div class="tooltip">Gulp/Grunt can end up watching huge numbers of files for doing compilation and live-reload.<br>Pingy is more efficient, it knows which files are needed to serve your site and it will only watches those files.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td><img src="images/feature-no.svg"></td>
+              </tr>
+              <tr>
+                <td>Source Maps</td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td>Requires plugin + config</td>
+              </tr>
+              <tr>
+                <td>Minification</td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td>Requires plugin + config</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>In-memory Compilation</span>
+                    <div class="tooltip">Pingy CLI doesn't need to write files to your hard-drive or use temporary directories. It's all done in-memory which makes it super-fast and keeps your file-system clean.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td><img src="images/feature-no.svg"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-tooltip-item">
+                    <span>Export</span>
+                    <div class="tooltip">Export your site so you can FTP or do whatever you like with it.</div>
+                  </div>
+                </td>
+                <td><img src="images/feature-yes.svg"></td>
+                <td>Requires config</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="pingy-call-to-action">
+      <topbar></topbar>
+      <div class="placeholder" title="https://pin.gy/">
+        <div class="videos" style="left: auto; display: block;">
+          <div class="inner">
+            <video playsinline="" webkit-playsinline="" muted="" autoplay="" style="display: block" class="pingy-ui-video" preload="auto" loop>
+              <source src="https://pin.gy/images/videos/pingy-ui-600-cropped.mp4">
+            </video>
+          </div>
+        </div>
+        <div class="text">
+          <a href="https://pin.gy"><img src="./images/check-out.svg" class="check-out"></a>
+          <svg class="pingy-logo" width="35px" height="49px" viewbox="0 0 35 49" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(4.000000, 4.500000)">
+              <path d="M18.2132404,34.8651163 L8.20515679,34.8651163 C7.38197352,34.8651163 6.74460209,35.6692093 7.01862857,36.5426977 C7.18374355,37.0695814 7.71100767,37.3953488 8.25777282,37.3953488 L8.27653798,37.3953488 C8.99899652,37.3953488 9.65954843,37.8083721 9.98287944,38.4618605 L9.99603345,38.4884651 C10.4320474,39.3689302 11.3221045,39.9255814 12.296053,39.9255814 L14.1225282,39.9255814 C15.0964767,39.9255814 15.9865338,39.3689302 16.4219038,38.4884651 L16.4350578,38.4618605 C16.7584808,37.8084651 17.4189408,37.3953488 18.1413993,37.3953488 L18.1601645,37.3953488 C18.7068376,37.3953488 19.2341937,37.0695814 19.3993087,36.5426977 C19.6737951,35.6691163 19.0364237,34.8651163 18.2132404,34.8651163 L18.2132404,34.8651163 Z M19.4643429,31.6651163 C19.4643429,32.3634419 18.9038718,32.9302326 18.2132404,32.9302326 L8.20515679,32.9302326 C7.51461742,32.9302326 6.95414634,32.3634419 6.95414634,31.6651163 C6.95414634,30.9914419 7.47644321,30.4455814 8.13322369,30.4075349 C7.35446969,23.2887442 0.0735888502,21.7029767 0.0735888502,13.3209302 C0.0735888502,5.98455814 5.95462578,0.0372093023 13.2091986,0.0372093023 C20.4637714,0.0372093023 26.3448084,5.98455814 26.3448084,13.3209302 C26.3448084,21.7028837 19.0639275,23.2887442 18.2851735,30.4076279 C18.941954,30.4455814 19.4643429,30.9914419 19.4643429,31.6651163 L19.4643429,31.6651163 Z" stroke="#FFFFFF" stroke-width="6" fill="#333333"></path>
+              <path d="M18.2132404,34.8651163 L8.20515679,34.8651163 C7.38197352,34.8651163 6.74460209,35.6692093 7.01862857,36.5426977 C7.18374355,37.0695814 7.71100767,37.3953488 8.25777282,37.3953488 L8.27653798,37.3953488 C8.99899652,37.3953488 9.65954843,37.8083721 9.98287944,38.4618605 L9.99603345,38.4884651 C10.4320474,39.3689302 11.3221045,39.9255814 12.296053,39.9255814 L14.1225282,39.9255814 C15.0964767,39.9255814 15.9865338,39.3689302 16.4219038,38.4884651 L16.4350578,38.4618605 C16.7584808,37.8084651 17.4189408,37.3953488 18.1413993,37.3953488 L18.1601645,37.3953488 C18.7068376,37.3953488 19.2341937,37.0695814 19.3993087,36.5426977 C19.6737951,35.6691163 19.0364237,34.8651163 18.2132404,34.8651163 L18.2132404,34.8651163 Z M19.4643429,31.6651163 C19.4643429,32.3634419 18.9038718,32.9302326 18.2132404,32.9302326 L8.20515679,32.9302326 C7.51461742,32.9302326 6.95414634,32.3634419 6.95414634,31.6651163 C6.95414634,30.9914419 7.47644321,30.4455814 8.13322369,30.4075349 C7.35446969,23.2887442 0.0735888502,21.7029767 0.0735888502,13.3209302 C0.0735888502,5.98455814 5.95462578,0.0372093023 13.2091986,0.0372093023 C20.4637714,0.0372093023 26.3448084,5.98455814 26.3448084,13.3209302 C26.3448084,21.7028837 19.0639275,23.2887442 18.2851735,30.4076279 C18.941954,30.4455814 19.4643429,30.9914419 19.4643429,31.6651163 L19.4643429,31.6651163 Z" fill="#333333"></path>
+              <path d="M19.6748601,14.7845305 L14.069291,3.46725365 C13.9882403,3.3221351 13.8816979,3.25581395 13.7601219,3.25581395 C13.5764506,3.25581395 13.4280756,3.40487237 13.4280756,3.58938962 C13.4280756,3.59267285 13.4365728,3.66227722 13.4365728,3.66227722 L14.380421,11.3141616 C14.3908791,11.4060919 14.39284,11.4389242 14.39284,11.4724131 C14.39284,12.0246515 13.9457541,12.4718268 13.3940866,12.4718268 L8.16370363,12.4770799 C7.39306861,12.5374913 6.78518856,13.1829733 6.78518856,13.9709474 C6.78518856,14.2033997 6.83813295,14.4233758 6.93356358,14.6197126 L12.5776971,26.0164436 L12.6129934,26.0899878 C12.6750887,26.1799482 12.7777093,26.2383896 12.8907881,26.2383896 C13.0744593,26.2383896 13.2247953,26.0899878 13.2247953,25.9048139 C13.2176053,25.8378361 12.2776789,18.2253504 12.2776789,18.2253504 C12.2665671,18.1734755 12.2600308,18.1202872 12.2580699,18.0657857 C12.256109,17.4688954 12.703195,17.0210635 13.2548624,17.0210635 L18.4904745,17.0158103 C19.2611095,16.9560556 19.8689895,16.3105736 19.8689895,15.5225995 C19.8689895,15.316413 19.8284642,15.1200761 19.7526426,14.9414687 C19.7526426,14.9408121 19.6748601,14.7845305 19.6748601,14.7845305 Z" fill="#fc0" transform="translate(13.327089, 14.747102) scale(-1, 1) translate(-13.327089, -14.747102)"></path>
+            </g>
+          </svg>
+          <h4>Pingy CLI has been extracted from the <a href="https://pin.gy">Pingy Desktop App</a>. <span>If you make Websites then you should check it out.</span></h4>
+          <p>Quicker client feedback and website iterations. No more configuring build tools. No more setting up servers. No more messing with the command-line.</p>
+        </div>
+      </div>
+
+      <footer class="main-footer">
+        © 2017 Pingy &nbsp;•&nbsp; <a href="mailto:hi@pin.gy">hi@pin.gy</a> &nbsp;•&nbsp; <a href="https://twitter.com/pingyhq">@pingyhq on twitter</a>
+        <div class="pingy-loves-you" title="Pingy Loves You!">
+          <svg style="position: relative; top: 2px" width="11px" height="17px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g transform="translate(0.000000, 0.500000)" fill-rule="nonzero" fill="#bbb">
+              <path d="M13.67486,11.7845305 L8.06929094,0.46725365 C7.98824024,0.3221351 7.88169784,0.25581395 7.76012184,0.25581395 C7.57645054,0.25581395 7.42807554,0.40487237 7.42807554,0.58938962 C7.42807554,0.59267285 7.43657274,0.66227722 7.43657274,0.66227722 L8.38042094,8.3141616 C8.39087904,8.4060919 8.39283994,8.4389242 8.39283994,8.4724131 C8.39283994,9.0246515 7.94575404,9.4718268 7.39408654,9.4718268 L2.16370357,9.4770799 C1.39306855,9.5374913 0.7851885,10.1829733 0.7851885,10.9709474 C0.7851885,11.2033997 0.83813289,11.4233758 0.93356352,11.6197126 L6.57769704,23.0164436 L6.61299334,23.0899878 C6.67508864,23.1799482 6.77770924,23.2383896 6.89078804,23.2383896 C7.07445924,23.2383896 7.22479524,23.0899878 7.22479524,22.9048139 C7.21760524,22.8378361 6.27767884,15.2253504 6.27767884,15.2253504 C6.26656704,15.1734755 6.26003074,15.1202872 6.25806984,15.0657857 C6.25610894,14.4688954 6.70319494,14.0210635 7.25486234,14.0210635 L12.4904744,14.0158103 C13.2611094,13.9560556 13.8689894,13.3105736 13.8689894,12.5225995 C13.8689894,12.316413 13.8284641,12.1200761 13.7526425,11.9414687 C13.7526425,11.9408121 13.67486,11.7845305 13.67486,11.7845305 Z" transform="translate(7.327089, 11.747102) scale(-1, 1) translate(-7.327089, -11.747102) "></path>
+            </g>
+          </svg>
+          ♥ <strong>U!</strong>
+        </div>
+      </footer>
+    </div>
+
+
     <script>
-      window.onload = () => setTimeout(() => document.body.classList.add('loaded'), 250);
-    </script>
+    (function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }), (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(
+  window,
+  document,
+  'script',
+  'https://www.google-analytics.com/analytics.js',
+  'ga'
+);
+ga('create', 'UA-76471371-1', 'auto');
+ga('send', 'pageview');
+</script>
+    <script src="scripts/polyfill.js"></script>
+    <script src="scripts/bliss.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="bower_components/clipboard/dist/clipboard.min.js"></script>
+    <script src="scripts/terminal.js"></script>
+    <script src="scripts/browser.js"></script>
+    <script src="scripts/code-editor.js"></script>
+    <!-- <script src="scripts/code-editor-refs.js"></script> -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/plugin-editor.js"></script>
+    <script src="scripts/plugin-ref-editor.js"></script>
+    <script src="scripts/topbar.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

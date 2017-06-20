@@ -1,1 +1,22 @@
-{"name":"cli-site","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"pingy serve","export":"pingy export"},"author":"Dave Jeffery <dave@davejeffery.com>","license":"ISC","devDependencies":{"dogescript":"^2.3.0","node-sass":"^4.5.2"}}
+{
+  "name": "cli-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "author": "Dave Jeffery <dave@davejeffery.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@pingy/cli": "^0.6.10",
+    "babel-core": "^6.24.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "node-sass": "^4.5.2",
+    "typescript-compiler": "^1.4.1"
+  }
+}
