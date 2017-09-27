@@ -11,7 +11,7 @@
   "author": "Dave Jeffery <dave@davejeffery.com>",
   "license": "ISC",
   "devDependencies": {
-    "@pingy/cli": "^0.6.10",
+    "@pingy/cli": "^0.8.1",
     "babel-core": "^6.24.1",
     "babel-plugin-syntax-async-functions": "^6.13.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
